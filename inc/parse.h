@@ -23,7 +23,7 @@
 				RET,		/*return*/
 				COMMA,		/*,*/
 				OBRA,		/*(*/
-				COBRA,		/*)*/
+				CBRA,		/*)*/
 				VAR,		/*var*/
 				EQ,			/*=*/
 				SEMICOL,	/*;*/
@@ -52,7 +52,8 @@
 				NUMBER,		/*<<([1-9][0-9]*)|0>>*/
 				IDEN,		/*<<[a-zA-Z][a-zA-Z0-9]*>>*/
 				WHITESPACE,	/*[ \t\n\x0B\f\r| \t\n\r]+*/
-				NONE
+				NONE,
+				EndOF		/*EndOfFile*/
 		};
 
 
@@ -70,6 +71,7 @@
 		bool isdigit_t(char &c);
 		bool isspace_t(char &c);
 		void consume_token();
+		void error_token();
 
 	};
 
