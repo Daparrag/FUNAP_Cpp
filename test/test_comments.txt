@@ -1,0 +1,18 @@
+/
+/
+//
+// line comment 0k
+/ /line comment error
+/* large line comment 0k /* */
+/* */
+/**/
+/*
+*
+*
+		This Is a comment test.
+*
+*/
+
+/
+/
+                                  /* */

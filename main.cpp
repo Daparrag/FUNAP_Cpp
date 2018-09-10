@@ -1,25 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//============================================================================
+// Name        : Funproject.cpp
+// Author      : diego
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
 
-/* 
- * File:   main.cpp
- * Author: Homer
- *
- * Created on February 17, 2018, 5:53 PM
- */
-
-#include <cstdlib>
+#include <iostream>
+#include "parse.h"
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
 
-    return 0;
+
+
+
+int main() {
+
+	parse lparse;
+	while(lparse.nextToken());
+
+
+
+
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
 }
-
